@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+                'title',
+                'img_url',
+                'date',
+                'description'
+    ];
+
+    public function user(){
+        return $this->belongsTo(user::class);
+    }
+
+    public function category(){
+        return $this->belongsTo(type::class);
+    }
 }
