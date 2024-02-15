@@ -20,7 +20,7 @@ class Project extends Model
         return $this->belongsTo(user::class);
     }
 
-    public function category(){
+    public function type(){
         return $this->belongsTo(type::class);
     }
 }
