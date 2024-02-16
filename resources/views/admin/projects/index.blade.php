@@ -20,7 +20,7 @@
                         <h2 class="card-title">
                             {{$project->title}}
                         </h2>
-                        type = <strong><{{ $project->type->name }}</strong>
+                        type <strong>{{ $project->type->name }}</strong>
                         <img src="{{$project->img_url}}" class="card-img-top" alt="project image">
                         <div class="card-body">
                             <h4 class="card-title">Date: {{$project->date}} </h4>
