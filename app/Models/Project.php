@@ -16,10 +16,6 @@ class Project extends Model
                 'description'
     ];
 
-    public function user(){
-        return $this->belongsTo(user::class);
-    }
-
     public function type(){
         return $this->belongsTo(type::class);
     }
